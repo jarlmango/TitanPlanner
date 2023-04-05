@@ -28,9 +28,9 @@ Abilities[19]=new abilityPT("Protect III",19,112,4,0,0,0)
 Abilities[20]=new abilityPT("Plate Armor",20,106,7,0,0,0)
 	
 
-Spells = new Array(68)
+Spells = new Array(72)
 
-Lines = new Array(11);
+Lines = new Array(12);
 
 Lines[6003]=new linePT('Shield (Self)','Adds to the recipient\'s Armor Factor (AF), resulting in better protection against some forms of attack. It acts in addition to any armor the target is wearing.',6,0) 
 Spells[1]=new spellPT("Aura of Protection",1,6003,6,"14 AF ",6,"3 PP",'','4.0s','','','20m','') 
@@ -115,4 +115,9 @@ Spells[64]=new spellPT("Righteous Power",14,6070,6,"26 Str ",6,"11 PP",'','3.0s'
 Spells[65]=new spellPT("Virtuous Strength",20,6070,6,"31 Str ",6,"16 PP",'','3.0s','','','20m','') 
 Spells[66]=new spellPT("Virtuous Potency",30,6070,6,"39 Str ",6,"25 PP",'','3.0s','','','20m','') 
 Spells[67]=new spellPT("Virtuous Power",41,6070,6,"47 Str ",6,"33 PP",'','3.0s','','','20m','') 
-Spells[68]=new spellPT("Virtuous Might",50,6070,6,"55 Str ",6,"43 PP",'','3.0s','','','20m','')  
+Spells[68]=new spellPT("Virtuous Might",50,6070,6,"55 Str ",6,"43 PP",'','3.0s','','','20m','')
+Lines[6072]=new linePT('Celerity (Group, Chant)','Increases the caster\'s group\'s combat speed for a short duration, which will cause all members to be considerably more effective in melee combat',6,0) 
+Spells[69]=new spellPT("Celerity",18,6072,6,"24% Attack Speed Increase ",6,"",'','','350','8s','8s (pulse)','') 
+Spells[70]=new spellPT("Enhanced Celerity",26,6072,6,"28% Attack Speed Increase ",6,"",'','','350','8s','8s (pulse)','') 
+Spells[71]=new spellPT("Amplified Celerity",32,6072,6,"31% Attack Speed Increase ",6,"",'','','350','8s','8s (pulse)','')
+Spells[72]=new spellPT("Pure Celerity",44,6072,6,"37% Attack Speed Increase ",6,"",'','','350','8s','8s (pulse)','')
