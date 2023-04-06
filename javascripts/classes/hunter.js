@@ -55,7 +55,7 @@ sPIE[15] = 60;
 sEMP[15] = 60;
 sCHA[15] = 60;
 
-Abilities = new Array(12)
+Abilities = new Array(13)
 Abilities[1] = new abilityPT("Staff", 0, 83, 5, 0, 0, 0)
 Abilities[2] = new abilityPT("Cloth Armor", 0, 99, 7, 0, 0, 0)
 Abilities[3] = new abilityPT("Leather Armor", 0, 100, 7, 0, 0, 0)
@@ -68,6 +68,7 @@ Abilities[9] = new abilityPT("Spear", 5, 139, 5, 1, 0, 0)
 Abilities[10] = new abilityPT("Studded Armor", 10, 101, 7, 0, 0, 0)
 Abilities[11] = new abilityPT("Evade II", 20, 114, 4, 0, 0, 0)
 Abilities[12] = new abilityPT("Camouflage", 30, 182, 4, 0, 0, 0)
+Abilities[13] = new abilityPT("Evade III", 30, 115, 4, 0, 0, 0)
 
 //Styles = new Array(45);
 //Styles[1]=new stylePT(129,"Critical Shot I",3,"Increased Damage","","","2x Normal","","","",0,"")
