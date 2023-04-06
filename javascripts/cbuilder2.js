@@ -61,6 +61,7 @@ function BuildStylePT(spec, lvl, name, opening, special, fat, dmg, abonus, defen
         spec == "Scythe" ? 168:
         spec == "HandToHand" ? 169:
         spec == "Sword" ? 130:
+        spec == "SwordHunter" ? 140:
         spec == "Axe" ? 131:
         spec == "Hammer" ? 137:
         spec == "Left Axe" ? 132:
@@ -854,6 +855,21 @@ Styles[iStylePT++] = BuildStylePT("Sword", "34", "Polar Rift", "Any", "", "High"
 Styles[iStylePT++] = BuildStylePT("Sword", "39", "Niord's Fury", "Frost Cut", "Stun", "Low", "High", "Medium Bonus", "No Bonus", "", "Target cannot move or take any other action for 7 seconds.", "0,880");
 Styles[iStylePT++] = BuildStylePT("Sword", "44", "Sif's Revenge", "Ice Storm", "Bleed", "Medium", "Medium", "Medium Bonus", "No Bonus", "", "Bleed for 10 body damage every 4.0 sec for 40 seconds.", "0,880");
 Styles[iStylePT++] = BuildStylePT("Sword", "50", "Ragnarok", "Behind target", "Slowed", "Medium", "Medium", "Medium Bonus", "Low Penalty", "", "Target's attack speed reduced by 30% for 20 seconds.", "0,865");
+Styles[iStylePT++] = BuildStylePT("SwordHunter", "2", "Whirling Blade", "Any", "", "High", "Very Low", "No Bonus", "No Bonus", "", "", "0,039");
+Styles[iStylePT++] = BuildStylePT("SwordHunter", "4", "Frost Cut", "You Evade", "Bleed", "Low", "Medium", "Low Bonus", "No Bonus", "Niord's Fury", "Bleed for 4 body damage every 4.0 sec for 25 seconds.", "0,865");
+Styles[iStylePT++] = BuildStylePT("SwordHunter", "6", "Draw Out", "Any", "Taunt", "Medium", "Low", "High Bonus", "Medium Penalty", "", "Increases your target threat to monster targets by 17 damage.", "0,574");
+Styles[iStylePT++] = BuildStylePT("SwordHunter", "8", "Northern Lights", "To side of target", "Slowed", "Medium", "Medium", "Low Bonus", "No Bonus", "Aurora", "Target's attack speed reduced by 19% for 20 seconds.", "0,613");
+Styles[iStylePT++] = BuildStylePT("SwordHunter", "10", "Assault", "Any", "", "Medium", "Medium", "Medium Bonus", "No Bonus", "Baldur's Fury", "", "0,379");
+Styles[iStylePT++] = BuildStylePT("SwordHunter", "12", "Temper", "Any", "Detaunt", "Medium", "None", "No Bonus", "Medium Bonus", "", "Decreases your threat to monster targets by 19 damage.", "0,000");
+Styles[iStylePT++] = BuildStylePT("SwordHunter", "15", "Aurora", "Northern Lights", "Snare", "Medium", "High", "Medium Bonus", "No Bonus", "", "Taget moves 60% slower for 15 seconds.", "0,886");
+Styles[iStylePT++] = BuildStylePT("SwordHunter", "18", "Baldur's Fury", "Assault", "Snare", "High", "Medium", "Medium Bonus", "No Bonus", "", "Taget moves 60% slower for 9 seconds.", "0,642");
+Styles[iStylePT++] = BuildStylePT("SwordHunter", "21", "Reinforcement", "You Evade", "Bleed", "Low", "Medium", "Medium Bonus", "Low Penalty", "Rush", "Bleed for 7 body damage every 4.0 sec for 40 seconds.", "0,865");
+Styles[iStylePT++] = BuildStylePT("SwordHunter", "25", "Ice Storm", "You Evade", "", "Medium", "High", "Medium Bonus", "No Bonus", "Sif's Revenge", "", "0,904");
+Styles[iStylePT++] = BuildStylePT("SwordHunter", "29", "Rush", "Reinforcement", "Slowed", "Low", "High", "No Bonus", "Medium Penalty", "", "Target's attack speed reduced by 21% for 20 seconds.", "0,893");
+Styles[iStylePT++] = BuildStylePT("SwordHunter", "34", "Polar Rift", "Any", "", "High", "Medium", "Low Bonus", "No Bonus", "", "", "0,603");
+Styles[iStylePT++] = BuildStylePT("SwordHunter", "39", "Niord's Fury", "Frost Cut", "Stun", "Low", "High", "Medium Bonus", "No Bonus", "", "Target cannot move or take any other action for 7 seconds.", "0,880");
+Styles[iStylePT++] = BuildStylePT("SwordHunter", "44", "Sif's Revenge", "Ice Storm", "Bleed", "Medium", "Medium", "Medium Bonus", "No Bonus", "", "Bleed for 10 body damage every 4.0 sec for 40 seconds.", "0,880");
+Styles[iStylePT++] = BuildStylePT("SwordHunter", "50", "Ragnarok", "Behind target", "Slowed", "Medium", "Medium", "Medium Bonus", "Low Penalty", "", "Target's attack speed reduced by 30% for 20 seconds.", "0,865");
 Styles[iStylePT++] = BuildStylePT("Axe", "2", "Splitter", "Any", "", "High", "Very Low", "No Bonus", "No Bonus", "", "", "0,036");
 Styles[iStylePT++] = BuildStylePT("Axe", "4", "Cleave", "You Parry", "Slowed", "Low", "Medium", "Medium Bonus", "No Bonus", "Thrym's Strength", "Target's attack speed reduced by16% for 20 seconds.", "0,868");
 Styles[iStylePT++] = BuildStylePT("Axe", "6", "Plague", "Any", "Taunt", "Medium", "High", "Medium Bonus", "Medium Penalty", "", "Increases your target threat to monster targets by 17 damage.", "0,572");
