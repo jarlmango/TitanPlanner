@@ -66,8 +66,10 @@ function BuildStylePT(spec, lvl, name, opening, special, fat, dmg, abonus, defen
         spec == "Sword" ? 130:
         spec == "SwordHunter" ? 140:
         spec == "Axe" ? 131:
+        spec == "Axe SB" ? 141:
         spec == "Hammer" ? 137:
         spec == "Left Axe" ? 132:
+        spec == "Left Axe SB" ? 143:
         spec == "Spear" ? 139:
         spec == "Bow" ? 129:
         -1
@@ -919,6 +921,21 @@ Styles[iStylePT++] = BuildStylePT("Axe", "34", "Midnight Sun", "Valkyrie's Shiel
 Styles[iStylePT++] = BuildStylePT("Axe", "39", "Glacial Movement", "To side of target", "Slowed", "Medium", "Medium", "Medium Bonus", "Low Penalty", "", "", "0,749");
 Styles[iStylePT++] = BuildStylePT("Axe", "44", "Arctic Rift", "Evernight", "", "Low", "High", "Medium Bonus", "No Bonus", "", "", "0,945");
 Styles[iStylePT++] = BuildStylePT("Axe", "50", "Tyr's Fury", "Havoc", "Bleed", "Medium", "High", "High Bonus", "No Bonus", "", "Bleed for 9 body damage every 4.0 sec for 40 seconds.", "0,904");
+Styles[iStylePT++] = BuildStylePT("Axe SB", "2", "Splitter", "Any", "", "High", "Very Low", "No Bonus", "No Bonus", "", "", "0,036");
+Styles[iStylePT++] = BuildStylePT("Axe SB", "4", "Cleave", "You Evade", "Slowed", "Low", "Medium", "Medium Bonus", "No Bonus", "Thrym's Strength", "Target's attack speed reduced by16% for 20 seconds.", "0,868");
+Styles[iStylePT++] = BuildStylePT("Axe SB", "6", "Plague", "Any", "Taunt", "Medium", "High", "Medium Bonus", "Medium Penalty", "", "Increases your target threat to monster targets by 17 damage.", "0,572");
+Styles[iStylePT++] = BuildStylePT("Axe SB", "8", "Thrym's Strength", "Cleave", "", "Medium", "Medium", "Medium Bonus", "No Bonus", "", "", "0,891");
+Styles[iStylePT++] = BuildStylePT("Axe SB", "10", "Pillager", "Any", "Slowed", "High", "Medium", "Low Bonus", "No Bonus", "Plunderer", "Target's attack speed reduced by 21% for 20 seconds.", "0,377");
+Styles[iStylePT++] = BuildStylePT("Axe SB", "12", "Hoarfrost", "Any", "Detaunt", "Medium", "None", "Low Bonus", "Medium Bonus", "", "Decreases your threat to monster targets by 19 damage.", "0,000");
+Styles[iStylePT++] = BuildStylePT("Axe SB", "15", "Evernight", "Behind target", "Bleed", "Low", "Medium", "Medium Bonus", "No Bonus", "Arctic Rift", "Bleed for 6 body damage every 4.0 sec for 35 seconds.", "0,595");
+Styles[iStylePT++] = BuildStylePT("Axe SB", "18", "Plunderer", "Pillager", "Snare", "Medium", "Medium", "Medium Bonus", "No Bonus", "", "Taget moves 60% slower for 11 seconds.", "0,640");
+Styles[iStylePT++] = BuildStylePT("Axe SB", "21", "Valkyrie's Shield", "You Block", "", "Low", "Medium", "No Bonus", "Medium Bonus", "Midnight Sun", "", "0,891");
+Styles[iStylePT++] = BuildStylePT("Axe SB", "25", "Raider", "You Evade", "Bleed", "Low", "High", "No Bonus", "No Bonus", "", "Bleed for 7 body damage every 4.0 sec for 40 seconds.", "0,954");
+Styles[iStylePT++] = BuildStylePT("Axe SB", "29", "Havoc", "In front of target", "", "Medium", "High", "Low Bonus", "Low Penalty", "", "", "0,722");
+Styles[iStylePT++] = BuildStylePT("Axe SB", "34", "Midnight Sun", "Valkyrie's Shield", "Stun", "Medium", "Medium", "Medium Bonus", "No Bonus", "", "Target cannot move or take any other action for 6 seconds.", "0,868");
+Styles[iStylePT++] = BuildStylePT("Axe SB", "39", "Glacial Movement", "To side of target", "Slowed", "Medium", "Medium", "Medium Bonus", "Low Penalty", "", "", "0,749");
+Styles[iStylePT++] = BuildStylePT("Axe SB", "44", "Arctic Rift", "Evernight", "", "Low", "High", "Medium Bonus", "No Bonus", "", "", "0,945");
+Styles[iStylePT++] = BuildStylePT("Axe SB", "50", "Tyr's Fury", "Havoc", "Bleed", "Medium", "High", "High Bonus", "No Bonus", "", "Bleed for 9 body damage every 4.0 sec for 40 seconds.", "0,904");
 Styles[iStylePT++] = BuildStylePT("Hammer", "2", "Thor's Anvil", "Any", "", "High", "Very Low", "No Bonus", "No Bonus", "", "", "0,037");
 Styles[iStylePT++] = BuildStylePT("Hammer", "4", "Crushing Blow", "You Parry", "Stun", "Low", "Medium", "Medium Bonus", "No Bonus", "Slam", "Target cannot move or take any other action for 2 seconds.", "0,857");
 Styles[iStylePT++] = BuildStylePT("Hammer", "6", "Placate", "Any", "Detaunt", "Medium", "None", "No Bonus", "Medium Bonus", "", "Decreases your threat to monster targets by 19 damage.", "0,000");
@@ -949,6 +966,21 @@ Styles[iStylePT++] = BuildStylePT("Left Axe", "34", "Doublefrost", "Any", "", "H
 Styles[iStylePT++] = BuildStylePT("Left Axe", "39", "Frosty Gaze", "Comeback", "Stun", "Medium", "Low", "Medium Bonus", "No Bonus", "", "Target cannot move or take any other action for 7 seconds.", "0,935");
 Styles[iStylePT++] = BuildStylePT("Left Axe", "44", "Icy Brillance", "Snowsquall", "Bleed", "Medium", "Medium", "High Bonus", "No Bonus", "", "Bleed for 9 body damage every 4.0 sec for 40 seconds.", "1,101");
 Styles[iStylePT++] = BuildStylePT("Left Axe", "50", "Aurora Borealis", "Target parried", "Slowed", "Low", "High", "High Bonus", "No Bonus", "", "Decreases the target\'s combat speed for 20 seconds. ", "1,267");
+Styles[iStylePT++] = BuildStylePT("Left Axe SB", "2", "Counter Slash", "Any", "", "High", "Very Low", "No Bonus", "No Bonus", "", "", "0,037");
+Styles[iStylePT++] = BuildStylePT("Left Axe SB", "4", "Doubler", "Behind target", "Bleed", "Medium", "Low", "Low Bonus", "Low Penalty", "", "Bleed for 3 body damage every 4.0 sec for 20 seconds.", "0,603");
+Styles[iStylePT++] = BuildStylePT("Left Axe SB", "6", "Ravager", "Any", "", "Medium", "Low", "Low Bonus", "No Bonus", "Atrophy", "", "0,351");
+Styles[iStylePT++] = BuildStylePT("Left Axe SB", "8", "Polar Light", "You Evade", "Slowed", "Low", "Low", "High Bonus", "Low Bonus", "Frost Shadow", "Target's attack speed reduced by 19% for 20 seconds.", "0,874");
+Styles[iStylePT++] = BuildStylePT("Left Axe SB", "10", "Snowblind", "Any", "Taunt", "Medium", "Low", "Low Bonus", "Medium Penalty", "", "Increases your target threat to monster targets by 17 damage.", "0,572");
+Styles[iStylePT++] = BuildStylePT("Left Axe SB", "12", "Atrophy", "Ravager", "Snare", "Medium", "Low", "Low Bonus", "No Bonus", "Scathing Blade, Decaying Rage", "Taget moves 60% slower for 12 seconds.", "0,658");
+Styles[iStylePT++] = BuildStylePT("Left Axe SB", "15", "Frost Shadow", "Polar Light", "", "Medium", "Low", "Medium Bonus", "Low Bonus", "", "", "0,923");
+Styles[iStylePT++] = BuildStylePT("Left Axe SB", "18", "Comeback", "You Evade", "", "Low", "Low", "Medium Bonus", "No Bonus", "Frosty Gaze", "", "0,917");
+Styles[iStylePT++] = BuildStylePT("Left Axe SB", "21", "Scathing Blade", "Atrophy", "Slowed", "Medium", "Medium", "Medium Bonus", "Medium Penalty", "", "Target's attack speed reduced by 21% for 20 seconds.", "0,972");
+Styles[iStylePT++] = BuildStylePT("Left Axe SB", "25", "Decaying Rage", "To side of target", "Stun", "Low", "Low", "Medium Bonus", "High Bonus", "", "Target cannot move or take any other action for 5 seconds.", "0,923");
+Styles[iStylePT++] = BuildStylePT("Left Axe SB", "29", "Snowsquall", "Behind target", "", "Medium", "Medium", "Medium Bonus", "No Bonus", "Icy Brillance", "", "0,972");
+Styles[iStylePT++] = BuildStylePT("Left Axe SB", "34", "Doublefrost", "Any", "", "High", "Low", "Low Bonus", "No Bonus", "", "", "0,720");
+Styles[iStylePT++] = BuildStylePT("Left Axe SB", "39", "Frosty Gaze", "Comeback", "Stun", "Medium", "Low", "Medium Bonus", "No Bonus", "", "Target cannot move or take any other action for 7 seconds.", "0,935");
+Styles[iStylePT++] = BuildStylePT("Left Axe SB", "44", "Icy Brillance", "Snowsquall", "Bleed", "Medium", "Medium", "High Bonus", "No Bonus", "", "Bleed for 9 body damage every 4.0 sec for 40 seconds.", "1,101");
+Styles[iStylePT++] = BuildStylePT("Left Axe SB", "50", "Aurora Borealis", "Decaying Rage", "Slowed", "Low", "High", "High Bonus", "No Bonus", "", "Decreases the target\'s combat speed for 20 seconds. ", "1,267");
 //Styles[iStylePT++]=BuildStylePT("Shield", "3", "Numb", "Any", "Stun", "High", "Low", "No Bonus", "No Bonus", "", "Target cannot move or take any other action for 2 seconds.", "0,047");
 //Styles[iStylePT++]=BuildStylePT("Shield", "8", "Stun", "You Block", "Stun", "High", "Low", "No Bonus", "No Bonus", "", "Target cannot move or take any other action for 3 seconds.", "0,840");
 //Styles[iStylePT++]=BuildStylePT("Shield", "13", "Disable", "To side of target", "Stun", "High", "Low", "No Bonus", "No Bonus", "", "Target cannot move or take any other action for 4 seconds.", "0,645");
