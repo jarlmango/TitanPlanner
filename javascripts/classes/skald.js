@@ -68,9 +68,9 @@ Abilities[14]=new abilityPT("Evade I",20,113,4,0,0,0)
 //Styles[44]=new stylePT(130,"Sif's Revenge",44,"Bleeding","Medium","Medium","Medium Bonus","","","[*] Ice Storm",0,"Does damage to a target over a period of time.  Damage per tick (every 4 seconds) 10 Damage type Body Duration 40 seconds")
 //Styles[45]=new stylePT(130,"Ragnarok",50,"Slowed","Medium","Medium","Medium Bonus","","Low&nbsp;Penalty","Behind target",0,"Decreases the target\'s combat speed.  Duration 20 seconds")
 
-Spells = new Array(50)
+Spells = new Array(54)
 
-Lines = new Array(8);
+Lines = new Array(10);
 
 Lines[64067]=new linePT('Health Regeneration (Group, Song)','Song that increases the group\'s rate of health regeneration, reducing downtime between battles.  Only one song can be sung at a time.',64,0) 
 Spells[1]=new spellPT("Simple Song of Rest",1,64067,64,"2 HP ",64,"",'1500','','','8s','5s (pulse)','') 
@@ -130,3 +130,9 @@ Spells[47]=new spellPT("Energy Diminishing Song",46,64144,64,"+20 ENERGY ",64,""
 Spells[48]=new spellPT("Heat Diminishing Song",47,64144,64,"+20 HEAT ",64,"",'1500','','','8s','5s (pulse)','') 
 Spells[49]=new spellPT("Cold Diminishing Song",48,64144,64,"+20 COLD ",64,"",'1500','','','8s','5s (pulse)','') 
 Spells[50]=new spellPT("Matter Diffusing Song",49,64144,64,"+20 MATTER ",64,"",'1500','','','8s','5s (pulse)','') 
+Lines[64145]=new linePT('Cure Mesmerise (Instant)','All mesmerization effects are removed from the target.',64,0)
+Spells[51]=new spellPT("Cure Mind",18,64145,64,"",64,"6% ","1500",'','','20s','','')
+Lines[64146]=new linePT('Chant (Group, Mesmerisation Dampening)','Mesmerisation spells cast upon the caster\'s group are reduced in duration by the given percentage.',64,0)
+Spells[52]=new spellPT("Solidarity of Mind",20,64146,64,"-5% Mez Dur ",64,"18 PP",'2000','4.0s','','','10s (pulse)','') 
+Spells[53]=new spellPT("Unity of Mind",35,64146,64,"-10% Mez Dur ",64,"25 PP",'2000','4.0s','','','10s (pulse)','') 
+Spells[54]=new spellPT("Brotherhood of the Mind",44,64146,64,"-15% Mez Dur ",64,"32 PP",'2000','4.0s','','','10s (pulse)','') 
