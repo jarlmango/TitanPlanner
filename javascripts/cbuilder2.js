@@ -54,10 +54,12 @@ function BuildStylePT(spec, lvl, name, opening, special, fat, dmg, abonus, defen
         spec == "Crit Strike" ? 142:
         spec == "Flexible" ? 167:
         spec == "Blades" ? 123:
+        spec == "Blades RangerNS" ? 133:
         spec == "Blunt" ? 122:
         spec == "Pierce" ? 125:
         spec == "Celtic Spear" ? 127:
         spec == "Celtic Dual" ? 147:
+        spec == "Celtic Dual RangerNS" ? 157:
         spec == "Large Weapons" ? 128:
         spec == "Scythe" ? 168:
         spec == "HandToHand" ? 169:
@@ -711,6 +713,21 @@ Styles[iStylePT++] = BuildStylePT("Blades", "34", "Revenging Blade", "Behind Tar
 Styles[iStylePT++] = BuildStylePT("Blades", "39", "Spectrum Blade", "Fire Blade", "Slowed", "Medium", "Medium", "Low Bonus", "Medium Bonus", "", "Target's attack speed reduced by 30% for 20 seconds.", "0,759");
 Styles[iStylePT++] = BuildStylePT("Blades", "44", "Prismatic Blade", "Dancing Blade", "", "Low", "High", "Medium Bonus", "No Bonus", "", "", "0,912");
 Styles[iStylePT++] = BuildStylePT("Blades", "50", "Brilliant Blade", "Revenging Blade", "", "Medium", "High", "Very High Bonus", "No Bonus", "", "", "0,972");
+Styles[iStylePT++] = BuildStylePT("Blades RangerNS", "2", "Shining Blade", "Any", "", "High", "Very Low", "No Bonus", "No Bonus", "", "", "0,036");
+Styles[iStylePT++] = BuildStylePT("Blades RangerNS", "4", "Return Blade", "You Evade", "Slowed", "Low", "Medium", "Medium Bonus", "No Bonus", "Lunging Blade", "Target's attack speed reduced by 16% for 20 seconds.", "0,859");
+Styles[iStylePT++] = BuildStylePT("Blades RangerNS", "6", "Taunting Blade", "Any", "Taunt", "Medium", "Low", "Medium Bonus", "Medium Penalty", "", "Increases your threat to monster targets by 17 damage.", "0,571");
+Styles[iStylePT++] = BuildStylePT("Blades RangerNS", "8", "Enervating Blade", "Any", "Detaunt", "Medium", "None", "No Bonus", "Medium Bonus", "", "Decreases your threat to monster targets by 19 damage", "0,000");
+Styles[iStylePT++] = BuildStylePT("Blades RangerNS", "10", "Glowing Blade", "To side of target", "Snare", "Medium", "Medium", "Medium Bonus", "No Bonus", "Auroric Blade", "Target moves 60% slower for 14 seconds.", "0,626");
+Styles[iStylePT++] = BuildStylePT("Blades RangerNS", "12", "Lunging Blade", "Return Blade", "Bleed", "Medium", "Medium", "Medium Bonus", "Low Bonus", "Kinetic Blade", "Bleed for 5 body damage every 4.0 sec for 30 seconds.", "0,844");
+Styles[iStylePT++] = BuildStylePT("Blades RangerNS", "15", "Auroric Blade", "Glowing Blade", "Slowed", "Low", "Medium", "Medium Bonus", "No Bonus", "", "Target's attack speed reduced by 19% for 20 seconds.", "0,850");
+Styles[iStylePT++] = BuildStylePT("Blades RangerNS", "18", "Fire Blade", "Any", "None", "High", "Medium", "Low Bonus", "Low Penalty", "Spectrum Blade", "", "0,456");
+Styles[iStylePT++] = BuildStylePT("Blades RangerNS", "21", "Horizon Blade", "You Block", "Stun", "Low", "High", "Medium Bonus", "Low Bonus", "Dancing Blade", "Target cannot move or take any other action for 4 seconds.", "0,867");
+Styles[iStylePT++] = BuildStylePT("Blades RangerNS", "25", "Kinetic Blade", "Lunging Blade", "", "Medium", "High", "Medium Bonus", "No Bonus", "", "", "0,905");
+Styles[iStylePT++] = BuildStylePT("Blades RangerNS", "29", "Dancing Blade", "Horizon Blade", "Bleed", "Low", "Medium", "High Bonus", "No Bonus", "Prismatic Blade", "Bleed for 8 body damage every 4.0 sec for 40 seconds.", "0,859");
+Styles[iStylePT++] = BuildStylePT("Blades RangerNS", "34", "Revenging Blade", "Behind Target", "", "Medium", "Medium", "Medium Bonus", "Medium Penalty", "Brilliant Blade", "", "0,729");
+Styles[iStylePT++] = BuildStylePT("Blades RangerNS", "39", "Spectrum Blade", "Fire Blade", "Slowed", "Medium", "Medium", "Low Bonus", "Medium Bonus", "", "Target's attack speed reduced by 30% for 20 seconds.", "0,759");
+Styles[iStylePT++] = BuildStylePT("Blades RangerNS", "44", "Prismatic Blade", "Dancing Blade", "", "Low", "High", "Medium Bonus", "No Bonus", "", "", "0,912");
+Styles[iStylePT++] = BuildStylePT("Blades RangerNS", "50", "Brilliant Blade", "Revenging Blade", "", "Medium", "High", "Very High Bonus", "No Bonus", "", "", "0,972");
 Styles[iStylePT++] = BuildStylePT("Blunt", "2", "Contusions", "Any", "", "High", "Very Low", "No Bonus", "No Bonus", "", "None", "0,039");
 Styles[iStylePT++] = BuildStylePT("Blunt", "4", "Bruiser", "You Block", "Stun", "Low", "Medium", "Medium Bonus", "No Bonus", "Impact", "Target cannot move or take any other action for 2 seconds.", "0,880");
 Styles[iStylePT++] = BuildStylePT("Blunt", "6", "Blunt Trauma", "Any", "Detaunt", "Medium", "None", "No Bonus", "Medium Bonus", "Impact", "Decreases your threat to monster targets by 19 damage", "0,000");
@@ -780,6 +797,21 @@ Styles[iStylePT++] = BuildStylePT("Celtic Dual", "34", "Meteor Shower", "Tornado
 Styles[iStylePT++] = BuildStylePT("Celtic Dual", "39", "Solar Flare", "Hurricane", "", "Medium", "High", "Low Bonus", "Low Bonus", "", "", "0,812");
 Styles[iStylePT++] = BuildStylePT("Celtic Dual", "44", "Twin Star", "Metero Shower", "Bleed", "Medium", "Medium", "Medium Bonus", "No Bonus", "", "Bleed for 25 body damage every 4.0 sec for 40 seconds.", "0,875");
 Styles[iStylePT++] = BuildStylePT("Celtic Dual", "50", "Supernova", "Tempest", "Slowed", "Medium", "High", "High Bonus", "Low Bonus", "", "Target's attack speed reduced by 34% for 20 seconds.", "1,267");
+Styles[iStylePT++] = BuildStylePT("Celtic Dual RangerNS", "2", "Misty Gloom", "Any", "", "High", "Very low", "No Bonus", "No Bonus", "", "", "0,035");
+Styles[iStylePT++] = BuildStylePT("Celtic Dual RangerNS", "4", "Blinding Rain", "You Evade", "Bleed", "Low", "Medium", "Medium Bonus", "No Bonus", "Blizzard", "Bleed for 3 body damage every 4.0 sec for 20 seconds.", "0,875");
+Styles[iStylePT++] = BuildStylePT("Celtic Dual RangerNS", "6", "Squall", "Any", "Taunt", "Medium", "Low", "Low Bonus", "Medium Penalty", "", "Increases your threat to monster targets by 17 damage.", "0,574");
+Styles[iStylePT++] = BuildStylePT("Celtic Dual RangerNS", "8", "Snow Shower", "Behind target", "Snare", "Medium", "High", "Medium Bonus", "No Bonus", "Gale, Thunderstorm", "Target moves 60% slower for 12 seconds.", "0,644");
+Styles[iStylePT++] = BuildStylePT("Celtic Dual RangerNS", "10", "Gale", "Snow Shower", "Bleed", "Low", "Medium", "Medium Bonus", "Low Penalty", "", "Bleed for 5 body damage every 4.0 sec for 30 seconds.", "0,875");
+Styles[iStylePT++] = BuildStylePT("Celtic Dual RangerNS", "12", "Blizzard", "Blinding Rain", "Slowed", "Low", "High", "Medium Bonus", "No Bonus", "", "Target's attack speed reduced by 21% for 20 seconds.", "0,910");
+Styles[iStylePT++] = BuildStylePT("Celtic Dual RangerNS", "15", "Thunderstorm", "Snow Shower", "Detaunt", "Low", "Medium", "Medium Bonus", "High Bonus", "", "Decreases your threat to monster targets by 19 damage", "0,875");
+Styles[iStylePT++] = BuildStylePT("Celtic Dual RangerNS", "18", "Ice Storm", "To side of target", "Stun", "Medium", "High", "Medium Bonus", "No Bonus", "Tempest", "Target cannot move or take any other action for 4 seconds.", "0,763");
+Styles[iStylePT++] = BuildStylePT("Celtic Dual RangerNS", "21", "Hurricane", "Any", "", "High", "Medium", "Low Bonus", "Medium Penalty", "Solar Flare", "", "0,483");
+Styles[iStylePT++] = BuildStylePT("Celtic Dual RangerNS", "25", "Tornado", "You Evade", "Snare", "Low", "Medium", "High Bonus", "Medium Bonus", "Meteor Shower", "Target moves 60% slower for 23 seconds.", "0,875");
+Styles[iStylePT++] = BuildStylePT("Celtic Dual RangerNS", "29", "Tempest", "Ice Storm", "Bleed", "Medium", "High", "Medium Bonus", "No Bonus", "Supernova", "Bleed for 15 body damage every 4.0 sec for 40 seconds.", "0,973");
+Styles[iStylePT++] = BuildStylePT("Celtic Dual RangerNS", "34", "Meteor Shower", "Tornado", "", "Low", "Medium", "Medium Bonus", "No Bonus", "Twin Star", "", "0,875");
+Styles[iStylePT++] = BuildStylePT("Celtic Dual RangerNS", "39", "Solar Flare", "Hurricane", "", "Medium", "High", "Low Bonus", "Low Bonus", "", "", "0,812");
+Styles[iStylePT++] = BuildStylePT("Celtic Dual RangerNS", "44", "Twin Star", "Metero Shower", "Bleed", "Medium", "Medium", "Medium Bonus", "No Bonus", "", "Bleed for 25 body damage every 4.0 sec for 40 seconds.", "0,875");
+Styles[iStylePT++] = BuildStylePT("Celtic Dual RangerNS", "50", "Supernova", "Tempest", "Slowed", "Medium", "High", "High Bonus", "Low Bonus", "", "Target's attack speed reduced by 34% for 20 seconds.", "1,267");
 //Styles[iStylePT++]=BuildStylePT("Crit Strike", "2", "Backstab", "Behind target, stealthed", "Stun", "Medium", "Very Low", "Medium Bonus", "Medium Penalty", "Eviscerate", "Target cannot move or take any other action for 2 seconds.", "N/A");
 //Styles[iStylePT++]=BuildStylePT("Crit Strike", "4", "Eviscerate", "Backstab", "Slowed", "Medium", "High", "Low Bonus", "Low Penalty", "Kidney Rupture", "Target's attack speed reduced by 16% for 20 seconds.", "0,617");
 //Styles[iStylePT++]=BuildStylePT("Crit Strike", "6", "Kidney Rupture", "Eviscerate", "Bleed", "Low", "High", "Low Bonus", "Medium Penalty", "", "Bleed for 4 body damage every 4.0 sec for 25 seconds.", "0,669");
