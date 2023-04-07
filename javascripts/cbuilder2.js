@@ -47,6 +47,7 @@ function BuildStylePT(spec, lvl, name, opening, special, fat, dmg, abonus, defen
         spec == "Thrust" ? 89:
         spec == "Shield" ? 97:
         spec == "Polearm" ? 91:
+        spec == "Crossbows" ? 95:
         spec == "2-Hand" ? 93:
         spec == "Dual Wield" ? 118:
         spec == "Staff" ? 83:
@@ -632,6 +633,7 @@ Styles[iStylePT++] = BuildStylePT("Polearm", "34", "Defender's Rage", "Target St
 Styles[iStylePT++] = BuildStylePT("Polearm", "39", "Poleaxe", "Defender's Rage", "", "High", "High", "High Bonus", "No Bonus", "", "", "0,644");
 Styles[iStylePT++] = BuildStylePT("Polearm", "44", "Defender's Revenge", "Phalanx", "Stun", "Medium", "Very High", "Very High Bonus", "No Bonus", "", "Target cannot move or take any other action for 9 seconds.", "1,158");
 Styles[iStylePT++] = BuildStylePT("Polearm", "50", "Defender's Aegis", "Phalanx", "Snare", "Medium", "High", "High Bonus", "Low Bonus", "", "Target moves 60% slower for 31 seconds.", "0,908");
+Styles[iStylePT++] = BuildStylePT("Crossbows", "25", "Snapshot","","","","","","","","Armsman can draw and fire a crossbow shot when on the run for 60 seconds. Normal draw time applies. Re-use: 10min", "");
 Styles[iStylePT++] = BuildStylePT("2-Hand", "2", "Half Moon", "Any", "", "High", "Very Low", "No Bonus", "No Bonus", "", "", "0,038");
 Styles[iStylePT++] = BuildStylePT("2-Hand", "4", "Double Back", "Behind target", "Stun", "Medium", "Medium", "Medium Bonus", "No Bonus", "Two fists", "Target cannot move or take any other action for 2 seconds.", "0,593");
 Styles[iStylePT++] = BuildStylePT("2-Hand", "6", "Rile", "Any", "Taunt", "Medium", "Low", "Low Bonus", "Medium Penalty", "", "Increases your target threat to monster targets by 17 damage.", "0,574");
